@@ -9,14 +9,15 @@ User is prompted to guess the author of a randomly chosen quote. On incorrect gu
 
 Simplest way to use it is to build Docker image and use it that way:
 ```sh
-$ docker build --pull -t guessing-game .
-$ docker run --rm -ti guessing-game
+$ docker build --pull -t guessing_game .
+$ docker run --rm -ti guessing_game
 ```
 
-Alternatively, you can also run it from the command line:
+Alternatively, you can also run it from the command line by using pipenv:
 ```sh
-$ pip3 install requests bs4
-$ python3 guessing_game.py
+$ pip3 install pipenv
+$ pipenv sync
+$ pipenv run python3 guessing_game.py
 ```
 
 

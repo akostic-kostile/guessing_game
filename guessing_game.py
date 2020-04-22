@@ -70,10 +70,10 @@ def play_game(quotes, guesses=5, hint=1):
     print("")
     while guesses > 0:
         answer = input(f"Who said this? Guesses remaining: {guesses}. ")
-        if answer == one_quote[1]:
+        if answer.lower() == one_quote[1].lower():
             print("Congratulations! You guessed it!")
             return play_again(quotes)
-        elif guesses > 1:
+        if guesses > 1:
             print("Here's a hint:")
             print(show_hint(one_quote, hint))
         hint += 1
