@@ -12,6 +12,7 @@ class ExitGame(Exception):
     Exception class, created so I could break out of a while loop
     from from within play_again() function.
     """
+
     pass
 
 
@@ -111,7 +112,7 @@ def show_hint(quote, num):
         1: f"Author was born {place_of_birth} on {date_of_birth}",
         2: f"First letter of author's name is '{quote[1][0]}'",
         3: f"First letter of author's lastname is '{quote[1].split()[-1][0]}'",
-        4: f"{redact_desc(desc, quote[1])}"
+        4: f"{redact_desc(desc, quote[1])}",
     }
     return hints[num]
 
