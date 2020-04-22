@@ -45,9 +45,7 @@ def scrape_quotes():
 
 
 def play_again(quotes):
-    """
-    Either play again by calling play_game() or raise an exception and finish the program.
-    """
+    """Either play again or raise an exception and finish the program."""
     answer = input("Would you like to play again (y/n)? ")
     if answer == "y":
         return play_game(quotes)
