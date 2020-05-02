@@ -24,7 +24,7 @@ def scrape_quotes():
     """
     full_list = []
 
-    resp = get(f"http://quotes.toscrape.com")
+    resp = get("http://quotes.toscrape.com")
     soup = BeautifulSoup(resp.text, "html.parser")
 
     while soup.select(".next"):
